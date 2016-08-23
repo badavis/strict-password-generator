@@ -1,0 +1,27 @@
+*.csv
+*.dat
+*.iml
+*.log
+*.out
+*.pid
+*.seed
+*.sublime-*
+*.swo
+*.swp
+*.tgz
+*.xml
+.DS_Store
+.idea
+.project
+.strong-pm
+coverage
+node_modules
+*.log
+
+# Volatile database
+db.json
+
+# Transpiled Files
+env/*
+!/env/test.env
+
