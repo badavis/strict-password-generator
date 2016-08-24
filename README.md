@@ -11,16 +11,16 @@ $ npm install password-generator --save
 ### Usage
 
 ```javascript
-import PasswordGenerator from 'password-generator';
+const PasswordGenerator = require('password-generator').default;
 
 const passwordGenerator = new PasswordGenerator();
 
 // return value is a unique randomly generated password string
-let password = passwordGenerator.generatePassword(); 
+let password = passwordGenerator.generatePassword();
 ```
 
-### Options 
-Pass options object to passwordGenerator.generatePassword() 
+### Options
+Pass options object to passwordGenerator.generatePassword()
 
 Possible special characters : !@#$%^&*()+_-=}{[]|:;"/?.><,`~',
 
@@ -38,7 +38,7 @@ Possible special characters : !@#$%^&*()+_-=}{[]|:;"/?.><,`~',
 ### Examples
 
 ```javascript
-import PasswordGenerator from 'password-generator';
+const PasswordGenerator = require('password-generator').default;
 
 const passwordGenerator = new PasswordGenerator();
 
@@ -51,24 +51,24 @@ const options = {
   maximumLength    : 12
 }
 
-let password = passwordGenerator.generatePassword(options); 
+let password = passwordGenerator.generatePassword(options);
 
 console.log(password); // example string : qa5859qoz8
 ```
 ---
 ```javascript
-import PasswordGenerator from 'password-generator';
+const PasswordGenerator = require('password-generator').default;
 
 const passwordGenerator = new PasswordGenerator();
 
-// exactLength will always override minimumLength and maximumLength 
+// exactLength will always override minimumLength and maximumLength
 const options = {
   minimumLength    : 10,
   maximumLength    : 12,
   exactLength      : 15   
 }
 
-let password = passwordGenerator.generatePassword(options); 
+let password = passwordGenerator.generatePassword(options);
 
 console.log(password); // example string : 5eT1c^n9,`35C5}
 ```
