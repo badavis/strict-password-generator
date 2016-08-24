@@ -1,7 +1,7 @@
 {
-  "name": "password-generator",
+  "name": "strict-password-generator",
   "version": "1.0.0",
-  "description": "Generate a random password with specific requirements",
+  "description": "Generate a random password with strict requirements",
   "main": "dist/index.js",
   "scripts": {
     "test": "./node_modules/.bin/babel-node ./node_modules/.bin/_mocha --timeout 60000 -- ./test/* ",
@@ -10,7 +10,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/badavis/password-generator.git"
+    "url": "git+https://github.com/badavis/strict-password-generator.git"
   },
   "keywords": [
     "password",
@@ -22,9 +22,9 @@
   "author": "Ben Davis <bjamin.davis@gmail.com> (https://github.com/badavis)",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/badavis/password-generator/issues"
+    "url": "https://github.com/badavis/strict-password-generator/issues"
   },
-  "homepage": "https://github.com/badavis/password-generator#readme",
+  "homepage": "https://github.com/badavis/strict-password-generator#readme",
   "devDependencies": {
     "babel": "^6.5.2",
     "babel-cli": "^6.11.4",
