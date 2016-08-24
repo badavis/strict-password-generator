@@ -1,17 +1,17 @@
-# password-generator
-Generate a random password with specific requirements
+# strict-password-generator
+Generate a random password with strict requirements
 
 
 ### Install
 
 ```bash
-$ npm install password-generator --save
+$ npm install strict-password-generator --save
 ```
 
 ### Usage
 
 ```javascript
-const PasswordGenerator = require('password-generator').default;
+const PasswordGenerator = require('strict-password-generator').default;
 
 const passwordGenerator = new PasswordGenerator();
 
@@ -38,7 +38,7 @@ Possible special characters : !@#$%^&*()+_-=}{[]|:;"/?.><,`~',
 ### Examples
 
 ```javascript
-const PasswordGenerator = require('password-generator').default;
+const PasswordGenerator = require('strict-password-generator').default;
 
 const passwordGenerator = new PasswordGenerator();
 
@@ -57,7 +57,7 @@ console.log(password); // example string : qa5859qoz8
 ```
 ---
 ```javascript
-const PasswordGenerator = require('password-generator').default;
+const PasswordGenerator = require('strict-password-generator').default;
 
 const passwordGenerator = new PasswordGenerator();
 
