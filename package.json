@@ -2,9 +2,11 @@
   "name": "password-generator",
   "version": "1.0.0",
   "description": "Generate a random password with specific requirements",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
-    "test": "./node_modules/.bin/babel-node ./node_modules/.bin/_mocha --timeout 60000 -- ./test/* "
+    "test": "./node_modules/.bin/babel-node ./node_modules/.bin/_mocha --timeout 60000 -- ./test/* ",
+    "precompile": "babel -d ./dist ./index.js && babel -d ./dist/src ./src",
+    "prepublish": "npm run precompile"
   },
   "repository": {
     "type": "git",
@@ -18,7 +20,7 @@
     "requirements"
   ],
   "author": "Ben Davis <bjamin.davis@gmail.com> (https://github.com/badavis)",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/badavis/password-generator/issues"
   },
