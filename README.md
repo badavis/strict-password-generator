@@ -22,7 +22,7 @@ let password = passwordGenerator.generatePassword();
 ### Options
 Pass options object to passwordGenerator.generatePassword()
 
-Possible special characters : !@#$%^&*()+_-=}{[]|:;"/?.><,`~',
+Possible special characters : ['!', '@', '#', '$', '%', '^', '*', '+', '_', '-', '=', ':', ';', '?']
 
 
 |            Name          |                  Type                       | Default Value |

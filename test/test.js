@@ -50,10 +50,10 @@ describe('Unit Test Helper Functions', () => {
 
   describe('generateSpecialCharacter()', () => {
     const passwordGenerator = new PasswordGenerator();
-    const chars = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '+', '_', '-', '=', '}', '{', '[', ']', '|', ':', ';', '\"', '/', '?', '.', '>', '<', ',', '`', '~', '\''];
+    const chars = ['!', '@', '#', '$', '%', '^', '*', '+', '_', '-', '=', ':', ';', '?'];
     chars.forEach((test) => {
       const randomSpecialCharacter = passwordGenerator.generateSpecialCharacter();
-      it('The following randomly generated character... ' + randomSpecialCharacter + ' should exist within the string \' !@#$%^&*()+_-=}{[]|:;\"/?.><,\`~\', \'', (done) => {
+      it('The following randomly generated character... ' + randomSpecialCharacter + ' should exist within the string \' !@#$%^*+_-=:;?]; \'', (done) => {
         expect(chars).to.include(randomSpecialCharacter);
         done();
       });
@@ -90,7 +90,7 @@ describe('Unit Test generatePassword()', () => {
     const passwordGenerator = new PasswordGenerator();
     const upperCaseAlphas = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
     const lowerCaseAlphas = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-    const specialCharacters = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '+', '_', '-', '=', '}', '{', '[', ']', '|', ':', ';', '\"', '/', '?', '.', '>', '<', ',', '`', '~', '\''];
+    const specialCharacters = ['!', '@', '#', '$', '%', '^', '*', '+', '_', '-', '=', ':', ';', '?'];
     const numbers = ['0','1','2','3','4','5','6','7','8','9'];
 
     it('upperCaseAlpha : true', (done) => {
@@ -227,7 +227,7 @@ describe('Unit Test generatePassword()', () => {
     const passwordGenerator = new PasswordGenerator();
     const upperCaseAlphas = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I', 'J', 'K', 'L', 'M', 'N', 'O', 'P', 'Q', 'R', 'S', 'T', 'U', 'V', 'W', 'X', 'Y', 'Z'];
     const lowerCaseAlphas = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z'];
-    const specialCharacters = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '+', '_', '-', '=', '}', '{', '[', ']', '|', ':', ';', '\"', '/', '?', '.', '>', '<', ',', '`', '~', '\''];
+    const specialCharacters = ['!', '@', '#', '$', '%', '^', '*', '+', '_', '-', '=', ':', ';', '?'];
     const numbers = ['0','1','2','3','4','5','6','7','8','9'];
     it('minimumLength: 10, maximumLength: 18, number: true, specialCharacter: true, upperCaseAlpha: true, lowerCaseAlpha: true', (done) => {
       const options = {

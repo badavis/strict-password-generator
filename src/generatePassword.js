@@ -26,7 +26,7 @@ class PasswordGenerator {
   }
 
   generateSpecialCharacter() {
-   const chars = ['!', '@', '#', '$', '%', '^', '&', '*', '(', ')', '+', '_', '-', '=', '}', '{', '[', ']', '|', ':', ';', '\"', '/', '?', '.', '>', '<', ',', '`', '~', '\''];
+   const chars = ['!', '@', '#', '$', '%', '^', '*', '+', '_', '-', '=', ':', ';', '?'];
    return chars[this.generateRandomNumber(chars.length)];
   }
 
