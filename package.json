@@ -1,6 +1,6 @@
 {
   "name": "strict-password-generator",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "Generate a random password with strict requirements",
   "main": "dist/index.js",
   "scripts": {
