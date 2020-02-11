@@ -1,9 +1,9 @@
 import { expect } from 'chai';
 import { assert } from 'chai';
 import Debug from 'debug';
-const debug = new Debug('test:generatePassword:');
-import _ from 'lodash';
 import PasswordGenerator from '../src/generatePassword';
+
+const debug = new Debug('test:generatePassword:');
 
 describe('Unit Test Helper Functions', () => {
   beforeEach(() => {

@@ -16,6 +16,7 @@
 .strong-pm
 coverage
 node_modules
+dist
 *.log
 
 # Volatile database

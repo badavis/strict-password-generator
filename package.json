@@ -6,7 +6,7 @@
   "scripts": {
     "test": "./node_modules/.bin/babel-node ./node_modules/.bin/_mocha --timeout 60000 -- ./test/* ",
     "precompile": "babel -d ./dist ./index.js && babel -d ./dist/src ./src",
-    "prepublish": "npm run precompile"
+    "prepare": "npm run precompile"
   },
   "repository": {
     "type": "git",
@@ -38,7 +38,6 @@
     ]
   },
   "dependencies": {
-    "debug": "^4.1.0",
-    "lodash": "^4.15.0"
+    "debug": "^4.1.0"
   }
 }

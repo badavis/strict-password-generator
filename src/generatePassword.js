@@ -1,5 +1,4 @@
 import crypto from 'crypto';
-import _ from 'lodash';
 import Debug from 'debug';
 const debug = new Debug('src:PasswordGenerator:');
 
@@ -61,7 +60,8 @@ class PasswordGenerator {
     options.specialCharacter ? requirements.specialCharacter = this.generateSpecialCharacter() : requirements.specialCharacter = false;
     options.number ? requirements.number = this.generateRandomNumber() : requirements.number = false;
 
-    _.forEach(requirements, (value, key) => {
+    Object.keys(requirements).forEach(key => {
+      const value = requirements[key];
       if(value === false) return;
       let requirementMet = false;
       while (!requirementMet) {
